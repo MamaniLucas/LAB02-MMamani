@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/CRUD/boost/css/bootstrap.min.css">
+    <title>NUEVO USUARIO</title>
+
+</head>
+<header>
+    <div class="card">
+        <div class="card-body">
+            <h4>REGISTRAR UN NUEVO CLIENTE</h4><br>
+            <a href='clientes.php' class="btn btn-primary btn-block">Lista de Clientes</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Datos de usuario</h4>
+
+
+                        <form name="formRegisto" method="post" action="registrar_cliente.php">
+
+
+
+
+
+                            <div class="form-group">
+                                <h6 for="domTextElement">Nombre</h6>
+                                <input id="nombre" name="nombre" type="text" required='' placeholder="Nombre"
+                                    class="form-control" />
+
+                            </div>
+
+                            <div class="form-group">
+                                <h6 for="domTextElement">Apellido Paterno</h6>
+                                <input name="ape_paterno" type="text" required='' placeholder="Apellido Paterno"
+                                    class="form-control" />
+
+                            </div>
+
+                            <div class="form-group">
+                                <h6 for="domTextElement">Apellido Materno</h6>
+                                <input name="ape_materno" type="text" required='' placeholder="Apellido Materno"
+                                    class="form-control" />
+
+                            </div>
+
+                            <div class="form-group">
+                                <h6 for="domTextElement">Contraseña</h6>
+                                <input name="contraseña" type="password" required='' placeholder="** ** ** ** **"
+                                    class="form-control" />
+
+                            </div>
+                            <div class="form-group">
+                                <h6 for="domTextElement">E-mail</h6>
+                                <input id="nombre" name="correo" type="email" required='' placeholder="Correo"
+                                    class="form-control" />
+
+                            </div>
+
+
+                            <tr>
+                                <table>
+
+                                    <td colspan="2">
+                                        <input class="btn btn-danger btn-block" type="submit" value="Enviar" />
+
+                                    </td>
+                            </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
